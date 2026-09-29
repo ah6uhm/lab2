@@ -65,24 +65,23 @@ header {
     color: whitesmoke;
 }
 
-/* nav {
+nav {
+    display: flex;
     justify-content: space-around;
-    gap: 
-    padding: etc
-} */
+    gap: 1em;
+}
 
 nav a {
     color: whitesmoke;
     text-decoration: none;
-    padding: 10px; /* why do none of nav{} work? and why doesn't gap work here either? */
+    /* padding: 10px; why do none of nav{} work? and why doesn't gap work here either? */
 }
 
 .bio-hero {
-    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color:darkslategrey;
-    /* align-items: center; Why doesn't this work? */
-    margin: 0px auto; /* I thought this would work instead because we are not working inside a flexbox but this didn't either */
-    text-align: center; /* this one worked */
     padding-bottom: 10px;
     color: whitesmoke;
 }
@@ -100,6 +99,7 @@ nav a {
     border-radius: 8px;
     /* box-shadow: 4px 2px 5px rgba(0, 0, 0, 0.1); */
     box-shadow: 4px 5px;
+    flex-basis: 100%;
 }
 
 footer {
