@@ -37,16 +37,6 @@ header section {
     }
 }
 
-.card {
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
-}
-
-.card:hover {
-    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.2);
-    transform: translateY(-4px);
-}
-
-
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* Added the following additional styling */
@@ -90,7 +80,8 @@ nav a {
 .card-grid {
     background-color: azure;
     margin: 10px auto;
-    max-width: 900px; 
+    max-width: 900px;
+    border-radius: 1em;
 }
 
 .card {
@@ -100,6 +91,13 @@ nav a {
     /* box-shadow: 4px 2px 5px rgba(0, 0, 0, 0.1); */
     box-shadow: 4px 5px;
     flex-basis: 100%;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    margin: 1em;
+}
+
+.card:hover {
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
 }
 
 footer {
